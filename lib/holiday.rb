@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |key, value|
     puts "#{key.to_s.capitalize}:"
     value.each do |event, features|
-      result = "  #{event.to_s.split("_").map(&:capitalize).join}:"
+      result = "  #{event.to_s.split("_").map(&:capitalize).join(" ")}:"
       features.each_with_index {|item, index| result << (index != 0 ? ", #{item}" : " #{item}")}
       puts result
     end
