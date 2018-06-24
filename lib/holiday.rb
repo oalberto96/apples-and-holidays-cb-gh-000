@@ -75,4 +75,5 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.values.each do |holiday|
     keys << holiday.keys
   end
+  keys
 end
