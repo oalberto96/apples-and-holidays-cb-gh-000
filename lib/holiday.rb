@@ -63,8 +63,8 @@ def all_supplies_in_holidays(holiday_hash)
     value.each do |event, features|
       puts "#{event} #{features}"
       # result = event.to_s
-      # features.each_with_index {|item| result << index != 0 ? 
-      
+      # features.each_with_index {|item| result << index != 0 ?
+    end
   end
 end
 
