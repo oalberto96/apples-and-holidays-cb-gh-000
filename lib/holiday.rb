@@ -74,8 +74,8 @@ def all_holidays_with_bbq(holiday_hash)
   keys =[]
   holiday_hash.values.each do |holiday|
     holiday.each do |key, item|
+      binding.pry
       if item == "BBQ"
-        binding.pry
         keys << key
       end
     end
